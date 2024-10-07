@@ -1,0 +1,252 @@
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+.mainnav a {
+    color: #212529;
+}
+
+.bg-image-2{
+    min-height: 0vh;
+}
+
+/* Background images */
+.bg-image, .bg-image-2 , .bg-image-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bg-image {
+    background-image: url('Images/bg-masthead.jpg');
+    min-height: 100vh;
+}
+.bg-image-3{
+    background-image: url('Images/bg-signup.jpg');
+    min-height: 100vh;
+}
+
+.mb-3{
+    color: white;
+}
+.lead{
+    color: white;
+}
+
+/* Overlay effect */
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.bg-image-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.text-center{
+    position: relative;
+    z-index: 2;
+  
+}
+
+/* Text styling */
+.text-gray {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+h4, p {
+    font-family: "Roboto Slab", serif;
+}
+h4 {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+p {
+    font-size: 1rem;
+
+}
+.lead p{
+    margin-bottom: 0rem;
+}
+
+/* Button styling */
+.button-bg {
+    background-color: #64A19D;
+    color: white;
+    border: none;
+}
+
+.about-section {
+    text-align: center;
+    color: #333;
+    margin: 0; 
+    padding: 0; 
+    background-color: #111111;
+}
+
+.card-body{
+    color: whitesmoke;
+    background-color: #111111;
+}
+.cardone{
+    color: black;
+    background-color: white;
+}
+.cardone .card-title1{
+    color: #060606;
+}
+.card-body .card-title {
+    color: white;
+}
+.card-body .card-title .card-p p{
+    color: white;
+}
+
+.card {
+    border: none;
+    box-shadow: none; 
+    margin: 0;
+}
+hr {
+    display: none; 
+}
+
+.container, .card-body {
+    padding: 0; 
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.email-input {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+}
+
+.notify-btn {
+    border-radius: 25px;
+    background-color: #64A19D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.notify-btn:hover {
+    background-color: #5a8e89;
+}
+
+.telegram-icon {
+    width: 50px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.contact-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon img {
+    width: 50px; 
+    margin-bottom: 15px;
+}
+
+.contact-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #2c7873;
+}
+
+.contact-detail {
+    font-size: 14px;
+    color: #555;
+}
+
+.container-fluid-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-fluid-footer .social-icons img {
+    width: 25px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.container-fluid-footer .social-icons img:hover {
+    opacity: 0.7;
+}
+
+.container-fluid-footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .bg-image {
+        min-height: 50vh;
+    }
+    .bg-image-2{
+        min-height: 30vh;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
