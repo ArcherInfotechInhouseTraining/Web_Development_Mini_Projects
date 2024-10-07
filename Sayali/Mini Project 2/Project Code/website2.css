@@ -1,0 +1,224 @@
+/* Header */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+    /* Transparent border for toggler */
+}
+
+.navbar-toggler-icon {
+    color: white;
+    /* White color for the menu icon */
+}
+
+.navbar-custom .navbar-toggler-icon:after {
+    content: '\2630';
+    /* Unicode for the hamburger icon */
+    color: white;
+}
+
+.navs {
+    color: black;
+
+    &:hover {
+        color: #e0a700;
+    }
+}
+
+.container-fluid p {
+    color: black;
+    font-size: 30px;
+}
+
+
+/* BacKground for iamges */
+.bg-image {
+    background-image: url('images/image1.jpeg');
+    /* no-repeat center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.bg-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+ }
+ .content-wrapper{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+ }
+ .content-wrapper h1{
+    letter-spacing: 1rem;
+    font-size: 6rem;
+    color: white;
+}
+.content-wrapper .lead {
+    font-family: "Roboto" sans-serif;
+    color: white;
+}
+.content-wrapper .button{
+    background-color: #6cb9b8;
+    color: rgb(0, 0,0);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin-top: 30px;
+}
+/* media query for bg-iamge and navbar */
+@media (max-width: 768px) {
+    .navbar-custom {
+        font-size: 1rem;
+    }
+
+    .bg-image {
+        height: 90vh;
+    }
+
+    .content-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrapper p {
+        font-size: 1.3rem;
+    }
+
+    .btn-custom {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+
+
+
+/* 2nd Images */
+.about-section{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 160px 0px 0px 0px;
+}
+.text-white{
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+.about-section .text-white-50{
+    margin-bottom: 5rem;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* Third Images */
+.projects-section{
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 160px 0px;
+}
+.project-text{
+    background-color: #212529;
+    padding: 80px ;
+    margin: 98.2px 0px;
+    font-size: 14.4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+/* Footer */
+.subscribe-section {
+    background-image: url('images/image5.jpeg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    height: 500px;
+  }
+
+  /* Card styling */
+  .contact-card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+
+  .contact-card h5 {
+    color: #00bfa5;
+  }
+
+  .footer-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #333;
+  }
+
+  .footer-icons i:hover {
+    color: #00bfa5;
+  }
+
+  /* Button and input customization */
+  .btn-custom {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+  }
+
+  .btn-custom:hover {
+    background-color: #01947e;
+  }
+
+  .form-control-custom {
+    background-color: white;
+    border: 2px solid #00bfa5;
+  }
+  .main-container{
+    background-color: black;
+  }
+  .bi{
+    font-size: 70px;
+  }
+
+
+  /* Media Query */
+  @media (max-width: 768px) {
+    /* Styles for small screens (e.g., smartphones) */
+    .projects-section-md .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6, .col-lg-7, .col-lg-8 {
+        width: 100%;
+    }
+
+    .subscribe-section input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .subscribe-section form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-card .fs-1 {
+        font-size: 2rem;
+    }
+
+    .featured-text, .project-text {
+        text-align: center;
+    }
+
+    .footer-icons a {
+        margin: 0 10px;
+    }
+}
