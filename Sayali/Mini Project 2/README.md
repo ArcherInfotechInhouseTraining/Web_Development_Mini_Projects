@@ -2,6 +2,7 @@
 
 - Project Folder
 - Output Screenshot
+- <img src="https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/sayali/Sayali/Mini%20Project%202/Output%20Screenshots/Website2_Output.png?>raw=true" alt="Grayscale images">
 - # Mini Project 2
 
 # Studio Website
