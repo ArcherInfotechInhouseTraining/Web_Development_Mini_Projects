@@ -1,0 +1,202 @@
+.mainnav {
+  --bs-bg-opacity: 1;
+  background-color: #212529;
+}
+.mainnav a{
+  color: white;
+  &:hover{
+    color: #e0a700;
+  }
+}
+.navbar-toggler{
+  background-color: white;
+}
+.navbar-toggler-icon{
+  color: white;
+}
+.bg-image{
+  background-image: url(Image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg-image .btn {
+  background-color: #FEC107;
+  color: white;
+  font-weight: bold; 
+}
+
+.bg-image h4, .bg-image h1 {
+  color: white; 
+  margin: 0; 
+}
+.bg-image h4{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+}
+
+
+.timeline {
+  position: relative;
+  padding: 0 0 0 0;
+  margin: 50px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #c0bfbe;
+  z-index: 1;
+}
+
+/* Timeline item styles */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.timeline-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #dad9d9;
+}
+
+.timeline-item .content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.timeline-item:nth-child(odd) .content {
+  order: 1;
+  text-align: left;
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .content {
+  order: 1;
+  text-align: left;
+  margin-left: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 0%;
+    display: none;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    height: 18rem;
+
+  }
+
+  .timeline-item img {
+    order: 1;
+    left: 25%;
+    transform: translatey(120%);
+    margin-bottom: 15px;
+  }
+
+  .timeline-item .content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* team icon */
+.icon{
+  color: #212529;
+}
+
+
+/* Contact form container with padding and no scroll issues */
+.contact-form {
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+  /* background-color: rgba(0, 0, 0, 0.6); Semi-transparent background */
+}
+
+/* Ensuring the background image fits the container and doesn't cause scrolling */
+.contact {
+  background-image: url("Image/mapi.png");
+  background-size: cover; /* Ensures the background covers the container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-color: #212529; /*Fallback color*/
+  padding: 50px 0;
+  width: 100vw; /* Makes sure it spans the full viewport width */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Ensuring the body has no horizontal scroll */
+body {
+  overflow-x: hidden; /* Removes any horizontal scrolling across the page */
+}
+
+/* Form controls and buttons */
+.container .row .form-control {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  width: 25rem;
+  line-height: 50px;
+
+}
+
+.form-control::placeholder {
+  color: #ddd;
+  
+}
+
+.form-control:focus{
+  box-shadow: none;
+  border-color: #ffb600;
+}
+.container .row .text-area{
+  height: 145px;
+  margin-left: 20px;
+  line-height: 50px;
+}
+
+.btn-send {
+  background-color: #ffb600;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+ /* width: 100%; /* Full width on small screens */
+}
+
+.btn-send:hover {
+  background-color: #e0a700;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .contact-form {
+      padding: 20px;
+      margin-top: 20px;
+  }
+  .btn-send {
+      padding: 10px;
+  }
+}
