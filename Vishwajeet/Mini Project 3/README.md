@@ -23,8 +23,5 @@ This is a Bootstrap-based responsive website template. It features a navigation 
 ### Prerequisites
 To run this website template, you will need a web browser (Chrome, Firefox, Safari, etc.).
 
-### Installation
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+<img src = "https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/main/Vishwajeet/Mini%20Project%203/Output%20Screenshots/127.0.0.1_5500_%20(10).png?raw=true" alt = "project 3 image">
 
