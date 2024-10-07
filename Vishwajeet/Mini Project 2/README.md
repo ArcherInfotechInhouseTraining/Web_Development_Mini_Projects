@@ -19,3 +19,5 @@
 - CSS3: For custom styling.
 - Bootstrap 5: For responsive design.
 - Google Fonts: Roboto Slab font for a modern and clean look.
+
+- <img src = "https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/main/Vishwajeet/Mini%20Project%202/Output%20Screenshots/_D__bootstrap_Gray_Scale_index.html.png?raw=true" alt = "gray scale image">
