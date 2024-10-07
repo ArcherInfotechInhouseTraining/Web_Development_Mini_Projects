@@ -35,6 +35,8 @@ You can view a live demo of this project [here](#).
 - **Google Fonts**: Typography
 - **JavaScript**: For Bootstrap components functionality (e.g., navbar toggling)
 
+- <img src = "https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/main/Vishwajeet/Mini%20Project%201/Output%20Screenshots/studio.jpeg?raw=true" alt = "project 1 image"> 
+
 
 
 
