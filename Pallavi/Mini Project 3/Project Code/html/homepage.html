@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+        <style>
+            .hero {
+                background-color: #212529; /* Dark background */
+                color: white;              /* White text */
+                padding: 100px 0;          /* Padding for height */
+            }
+            .hero img {
+                width: 100%;
+                max-width: 600px;
+                height: 400px;
+                background-color: #495057; /* Placeholder background color */
+            }
+
+          /*  featured section  */
+           .feature-icon {
+                background-color: #0d6efd;
+                color: white;
+                font-size: 2rem;
+                width: 80px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 24%;
+                margin-bottom: 15px;
+                padding: 10px;
+            }
+            .feature-box {
+                text-align: left;
+            }
+
+            .text{
+              padding-top: 50px;
+              width: 100%;
+              height: 250px;
+            }
+            .text .text-container
+
+            .text .text-container .img-container{
+              padding-top: -100px;
+            }
+
+
+
+        /*  blog section */
+
+         .blog-section h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .blog-section p {
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-body p {
+            color: #6c757d;
+        }
+
+        .card-footer {
+            background-color: white;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-info img {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .author-name {
+            font-weight: bold;
+        }
+
+        .post-date {
+            color: #6c757d;
+        }
+
+
+      /* news letersection        */
+
+      .newsletter-section {
+          background-color: #0d6efd;
+          color: white;
+          padding: 30px 20px;
+          border-radius: 8px;
+        }
+        .newsletter-section input {
+          border-radius: 0.375rem;
+        }
+        .newsletter-text {
+          opacity: 0.9;
+        }
+
+/*        <!-- Footer Section -->*/
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            color: #adb5bd;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        
+
+       
+        </style>
+
+    </head>
+    <body>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Left: Text Content -->
+              <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">A Bootstrap 5 template for modern businesses</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary btn-lg me-3">Get Started</a>
+                  <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+              </div>
+
+              <!-- Right: Image Placeholder -->
+              <div class="col-lg-6 text-center ">
+                <img class="p-2" src="images/profile-pic.png" alt="Placeholder Image">
+              </div>
+            </div>
+          </div>
+      </section>
+
+       <!-- Features Section -->
+      <section class="py-5 ">
+        <div class="container bg-white">
+          <h2 class="fw-bold mb-5">A better way to start building.</h2>
+          <div class="row">
+            <!-- Feature Item 1 -->
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-folder"></i> <!-- Example icon -->
+                </div>
+                <div class="ms-3">
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Item 2 -->
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-file-earmark"></i> <!-- Example icon -->
+                </div>
+                <div class="ms-3">
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Item 3 -->
+            <div class="col-md-6 mt-4">
+              <div class="d-flex align-items-start feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-gear"></i> <!-- Example icon -->
+                </div>
+                <div class="ms-3">
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Feature Item 4 -->
+            <div class="col-md-6 mt-4">
+              <div class="d-flex align-items-start feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-star"></i> <!-- Example icon -->
+                </div>
+                <div class="ms-3">
+                  <h4>Featured title</h4>
+                  <p>Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text bg-light ">
+
+          <p class="text-container text-center  ">
+
+              <i> "Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,<br>cillum." </i>
+
+          </p>
+          <div class="d-flex justify-content-center">
+                <!-- <div class="col-md-1"> -->
+                  <img class="rounded-circle " src="images/profile-pic.png" width="40" height="40" alt="author">
+                <!-- </div> -->
+                <!-- <div class="col-md-2"> -->
+                  <p class="fw-bold ps-3">Tom Ato / CEO, promodoro</p>
+                <!-- </div> -->
+                
+          </div>
+          
+      </div>
+
+
+
+      <!-- blog section -->
+
+
+      <div class="container blog-section text-center mt-5">
+          <h2>From our blog</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Eaque fugit ratione dicta mollitia. Officiis ad.</p>
+      </div>
+
+        <div class="row m-4">
+            <!-- First Card -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-img-top" style="background-color: #dee2e6; height: 350px; display: flex; justify-content: center; align-items: center;">
+                            <span><img  src="images/profile-pic.png" height="350" width="400"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">News</span>
+                            <h5 class="card-title">Blog post title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <div class="author-info">
+                                <img src="images/profile-pic.png" alt="author">
+                                <div>
+                                    <p class="author-name mb-0">Kelly Rowan</p>
+                                    <p class="post-date mb-0">March 12, 2023 · 6 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-img-top" style="background-color: #dee2e6; height: 350px; display: flex; justify-content: center; align-items: center;">
+                            <span><img  src="images/profile-pic.png" height="350" width="400"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Media</span>
+                            <h5 class="card-title">Another blog post title</h5>
+                            <p class="card-text">This text is a bit longer to illustrate the adaptive height of each card.</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <div class="author-info">
+                                <img src="images/profile-pic.png" alt="author">
+                                <div>
+                                    <p class="author-name mb-0">Josiah Barclay</p>
+                                    <p class="post-date mb-0">March 23, 2023 · 4 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card-img-top" style="background-color: #dee2e6; height: 350px; display: flex; justify-content: center; align-items: center;">
+                            <span><img  src="images/profile-pic.png" height="350" width="400"></span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">News</span>
+                            <h5 class="card-title">The last blog post title is a little bit</h5>
+                            <p class="card-text">Some more quick on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-footer border-0">
+                            <div class="author-info">
+                                <img src="images/profile-pic.png" alt="author">
+                                <div>
+                                    <p class="author-name mb-0">Evelyn Martinez</p>
+                                    <p class="post-date mb-0">April 2, 2023 · 10 min read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section m-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h4>New products, delivered to you.</h4>
+                <p class="newsletter-text">Sign up for our newsletter for the latest updates.</p>
+              </div>
+              <div class="col-md-6">
+                <form class="d-flex">
+                  <input type="email" class="form-control me-2" placeholder="Email address">
+                  <button class="btn btn-outline-light" type="submit">Sign up</button>
+                </form>
+                <small class="d-block mt-2 text-white-50">We care about privacy, and will never share your data.</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer class="container-fluid m-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start text-center">
+                        <span>Copyright &copy; Your Website 2023</span>
+                    </div>
+                    <div class="col-md-6 text-md-end  footer-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
