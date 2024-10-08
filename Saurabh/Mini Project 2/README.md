@@ -23,3 +23,5 @@
 
 ### Conclusion: 
    - The combination of HTML for structure, CSS for customization, and Bootstrap for responsiveness results in a professional, adaptive, and accessible website   that's  quick to develop and easy to maintain.
+
+   - <img src="https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/main/Saurabh/Mini%20Project%202/Output%20Screenshots/Website_second_output.png?raw=true" alt="Website_Second_Output">
