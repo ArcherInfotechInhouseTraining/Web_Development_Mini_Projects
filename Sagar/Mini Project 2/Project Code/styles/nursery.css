@@ -1,0 +1,253 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.header h1{
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.logo img{
+    margin-top:10px;
+}
+.topnav {
+    background-color: #4CAF50;
+    overflow: hidden;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #45a049;
+}
+
+.container {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.search-container {
+    float:right;
+    margin-right: 20px;
+}
+
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+}
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.search-container button:hover {
+    background: #ccc;
+}
+
+.container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.plants, .ourservices, .gallery-class, .contact-us {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+.grid-services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-container, .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item, .gridserv, .gallery-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid-item img, .gridserv img, .gallery-item img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-item:hover, .gridserv:hover, .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item h4, .gridserv h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.grid-item p, .gridserv p {
+    padding: 0 10px 10px;
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us .col {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-us input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+@media(max-width:432px){
+
+    body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: gray;
+        display: inline-block;
+        width: fit-content;
+    }
+
+.topnav {
+    /* overflow: hidden;
+    background-color:#333; */
+    position: relative;  
+}
+
+.topnav a {
+    display: none; /* Hide all links initially */
+    width: 100%;
+    text-align: left;
+    background-color: #333;
+    color: #f2f2f2;
+    
+}
+
+.topnav::before {
+    content: 'Menu';
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    background-color: rgb(166, 157, 157, 0.8);;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.topnav:hover a {
+    display: block; /* Show links when hovering over the menu */
+}
+
+.topnav:hover::before {
+    background-color: rgba(#008000); /* Change menu background when hovering */
+}
+}
