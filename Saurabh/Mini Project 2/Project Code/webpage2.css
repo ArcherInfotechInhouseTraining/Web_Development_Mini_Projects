@@ -1,0 +1,346 @@
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+.mainnav a {
+    color: #212529;
+}
+
+.bg-image-2{
+    min-height: 0vh;
+}
+
+.collapse .nav-item .nav-link{
+    gap: 50px; 
+}
+/* For small devices (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small tablets */
+    .navbar-nav .nav-link {
+      font-size: 16px;
+    }
+    
+    img {
+      width: 9rem; /* Adjust the logo size */
+    }
+  }
+  
+  /* For medium devices (768px to 991px) */
+  @media (min-width: 576px) and (max-width: 992px) {
+    /* Styles for tablets */
+    header{
+        width: 100%;
+    }
+    .navbar-nav .nav-link {
+
+      font-size: 30px;
+    }
+  
+    .navbar-nav {
+      gap: 2rem; /* Adjust gap between nav items */
+    }
+  
+    img {
+      width: 19rem; /* Regular logo size */
+    } 
+  }
+/* navbar css end   */
+
+.bg-cover {
+    background: url('Image/bg1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+/* Background overlay to darken the image */
+.bg-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+}
+
+
+/* Media queries for tablets */
+@media (max-width: 991px) {
+    .bg-cover {
+        height: 80vh;
+    }
+
+    header .content-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .content-wrapper p {
+        font-size: 1rem;
+    }
+
+    .btn-custom {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 576px) {
+    .bg-cover {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .content-wrapper h1 {
+        font-size: 1rem;
+    }
+
+    .content-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .btn-custom {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+/* Ensure the content sits on top of the overlay */
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+/* Custom button style */
+.content-wrapper .button {
+    background-color: #6cb9b8;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn-custom:hover {
+    background-color: #5aa5a4;
+}
+@media (max-width: 768px) and (max-width: 800px) {
+    /* Styles for tablets */
+    .bg-cover{
+        width: 100%;
+    }
+    .content-wrapper h1{
+        width: 100%;
+        font-size: 10px;
+    }
+    .navbar-nav .nav-link {
+
+      font-size: 30px;
+    }
+  
+    .navbar-nav {
+      gap: 2rem; /* Adjust gap between nav items */
+    }
+  
+    img {
+      width: 10rem; /* Regular logo size */
+    }
+  }
+
+/* Custom heading style */
+.content-wrapper h1 {
+    font-size: 6rem;
+    letter-spacing: 1rem;
+}
+.content-wrapper .lead{
+    font-family: "Roboto" sans-serif;
+}
+
+
+/* about section css */
+.about-section{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 160px 0px 0px 0px;
+}
+.text-white{
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+.about-section .text-white-50{
+    margin-bottom: 5rem;
+    font-size: 16px;
+}
+
+
+.projects-section{
+    background-color: #f8f9fa;
+    /* color: #212529; */
+    padding: 160px 0px;
+}
+.project-text{
+    padding: 80px ;
+    margin: 98.2px 0px;
+    font-size: 14.4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) and (max-width:992px){
+    .featured-text {
+        text-align: center;
+    }
+    
+    .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-5 {
+        width: 100%;
+    }
+    
+    .img-fluid {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (mobile phones, 576px and up) */
+@media (max-width: 768px) {
+    .project {
+        padding: 15px;
+    }
+
+    .project-text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-lg-left, .text-lg-right {
+        text-align: center !important;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    .featured-text {
+        padding: 20px;
+    }
+
+    .img-fluid {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+.signup-section{
+    background-image: url(Image/secondbackup\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.text-center .text-white{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.input-group-newsletter .form-control{
+    height: 55px;
+    border-radius: 10px;
+}
+#submitButton{
+    background-color: #64a19d;
+    border-radius: 10px ;
+    height: 55px;
+    width: 150px;
+    margin-top: 10px;
+}
+.contact-section {
+    background-color: #212529;
+    padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .signup-section {
+        padding: 40px 0;
+    }
+
+    .signup-section h2 {
+        font-size: 1rem;
+    }
+
+    .form-signup .form-control {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+
+    .form-signup .btn {
+        /* padding: 0.4rem 0.8rem; */
+        font-size: 0.85rem;
+    }
+    
+    .input-group-newsletter{
+        display: grid;
+    }
+}
+
+.contact-section .line{
+    height: 4px;
+    width: 60px;
+    background-color: #72BF78;
+    margin: 10px auto;
+}
+
+
+.social{
+    margin-top: 80px;
+}
+.social .icon{
+   gap: 30px;
+   color: rgb(255, 255, 255);
+}
+
+
+
+
+/* footer css */
+.footer-main{
+    background-color: #040404;
+    padding: 50px 0px;
+}
+.main .sub-main{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    /* margin: 0px 99.6px; */
+
+}
+.sub-main .tag{
+    color: #ffffff;
+    font-size: 20px;
+}

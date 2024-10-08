@@ -1,0 +1,258 @@
+/* header css */
+/* .mainnav {
+  --bs-bg-opacity: 1;
+  background-color: #212529;
+} */
+.navbar-dark {
+  background-color: #343a40; /* Dark background like in the image */
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255,255,255,0.5); /* Light font color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Change color on hover */
+}
+
+/* .mainnav a{
+  color: white;
+}
+.navbar-toggler{
+  background-color: rgb(202, 42, 42);
+}
+.navbar-toggler-icon{
+  color: rgb(26, 140, 142);
+} */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-left: 0 !important;
+  }
+
+  .nav-link, .dropdown-toggle {
+    text-align: left;
+  }
+
+  .navbar-toggler {
+    background-color: rgb(221, 29, 29); /* Toggler button color */
+    color: white; /* Adjust the color of 'MENU' text */
+  }
+}
+
+
+/* features css */
+
+.row .col-md-6 .card{
+  width: 19rem;
+}
+.col-lg-6 .display-4{
+  font-weight: 700;
+}
+.bg-dark {
+  background-color: #2e2e2e !important;
+}
+.bg-secondary {
+  background-color: #4d4d4d !important;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+      font-size: 2.5rem; /* Smaller heading for tablets */
+  }
+  .lead {
+      font-size: 1rem; /* Adjust paragraph font size */
+  }
+  .bg-secondary {
+      height: 300px; /* Adjust image container height */
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+      font-size: 2rem; /* Smaller heading for mobile */
+  }
+  .lead {
+      font-size: 0.9rem; /* Smaller paragraph for mobile */
+  }
+  .bg-secondary {
+      height: 250px; /* Adjust image container for mobile */
+  }
+
+  .btn-lg {
+      font-size: 1rem; /* Adjust button sizes */
+      padding: 0.75rem 1.25rem;
+  }
+}
+
+
+
+/* blog css */
+.card-body .badge{
+  background-color: #4379F2;
+  width: 50px;
+  color: aliceblue;
+}
+
+.card-footer .rounded-circle{
+  margin-right: 10px;
+}
+.card-footer .text{
+  font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  /* For small mobile devices */
+  .icon svg {
+      width: 40px;
+      height: 40px;
+  }
+  .card{
+    align-items: center;
+  }
+
+  .card-body {
+      padding: 15px;
+      
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets and slightly larger mobile devices */
+  .icon svg {
+      width: 45px;
+      height: 45px;
+  }
+
+  .card-body {
+      padding: 20px;
+      align-items: center;
+  }
+
+  .card-text {
+      font-size: 1rem;
+  }
+}
+
+
+
+/* writing css */
+.testimonial {
+  background-color: #f8f9fa; /* Light background */
+  padding: 3rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial .quote {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.testimonial .author {
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.testimonial .author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial .author-info {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.testimonial .author-info span {
+  font-weight: normal;
+  color: #6c757d;
+}
+
+
+
+/* Custom card styling */
+.card {
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.icon svg {
+  fill: #07d1d5;
+}
+
+.card h5 {
+  font-weight: 600;
+}
+
+.card p {
+  color: #6c757d;
+}
+
+
+
+/* card type */
+@media (max-width: 991.98px) {
+  .card {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card {
+      margin-bottom: 40px;
+  }
+
+  .card-footer img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .card-title {
+      font-size: 1rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-footer img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .card-title {
+      font-size: 0.95rem;
+  }
+
+  .card-text {
+      font-size: 0.85rem;
+  }
+}
+
+/* newsletter css */
+.newsletter {
+  background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(0,89,255,1) 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.newsletter .form-control {
+  border-radius: 30px;
+}
+
+.newsletter .btn {
+  border-radius: 30px;
+}
+
+.newsletter .privacy-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
