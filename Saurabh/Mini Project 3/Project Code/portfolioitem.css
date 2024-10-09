@@ -1,0 +1,54 @@
+.navbar-dark {
+    background-color: #343a40; /* Dark background like in the image */
+  }
+  
+  .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.5); /* Light font color */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fff; /* Change color on hover */
+  }
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      margin-left: 0 !important;
+    }
+  
+    .nav-link, .dropdown-toggle {
+      text-align: left;
+    }
+  
+    .navbar-toggler {
+      background-color: rgb(221, 29, 29); /* Toggler button color */
+      color: white; /* Adjust the color of 'MENU' text */
+    }
+  }
+
+
+
+
+  .placeholder {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .large {
+    height: 700px;
+  }
+  .small {
+    height: 400px;
+  }
+  .container .text-center .text-item {
+    padding-left: 37%;
+    padding-right: 37%;
+  }
+  .container .text-center .text-footer {
+    padding-left: 32%;
+    padding-right: 32%;
+  }
+  .container .text-center .text-footer a:hover{
+    background-color: #5BBCFF;
+  }

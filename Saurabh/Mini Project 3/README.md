@@ -21,5 +21,9 @@ This is a Bootstrap-based responsive website template. It features a navigation 
 ## Getting Started
 
 ### Prerequisites
+
+To run this website template, you will need a web browser (Chrome, Firefox, Safari, etc.).
+
 To run this website template, you will need a web browser (Chrome, Firefox, Safari, etc.).
 - <img src="https://github.com/ArcherInfotechInhouseTraining/Web_Development_Mini_Projects/blob/main/Saurabh/Mini%20Project%203/Output%20Screenshots/Website_Third_Output.png?raw=true" alt="Website_Third_Output">
+
