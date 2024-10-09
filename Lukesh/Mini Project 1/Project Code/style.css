@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
+.bg-img{
+	background-image: url("C:\\Users\\LUKESH SABLE\\Documents\\bootstrap\\bootstrapweb-1\\img\\bg-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  height: 100vh;
+	width: 100%;
+}
+
+ .bg-img{
+ 	   justify-content:center;
+        align-items:center;
+        color: white;
+
+ }
+
+.bg-img h4{
+	
+    font-family:Bebas-Neue ;
+    font-size: 40px;
+}
+.bg-img h1{
+	font-weight: bolder;
+}
+.services h2{
+	font-family:Bebas-Neue  ;
+}
+.row card{
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      border-radius: 50%;
+}
+.fw-bold{
+	font-family: bebas-neue;
+}
+
+.portfolio{
+	padding-top: 100px;
+	background-color: lightgray;
+}
+.portfolio h5{
+    font-weight: bolder;
+}
+.portfolio p{
+	font-style: italic;
+}
+
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding: 0;
+  margin: 50px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #c0bfbe;
+  z-index: 1;
+}
+
+/* Timeline item styles */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.timeline-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #dad9d9;
+}
+
+.timeline-item .content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 40%;
+}
+
+/* Alternate left and right alignment */
+.timeline-item:nth-child(odd) .content {
+  order: 1;
+  text-align: left;
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .content {
+  order: 1;
+  text-align: left;
+  margin-left: auto;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    display: none; 
+  }
+  
+
+  .timeline-item {
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item img {
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+  }
+
+  .timeline-item .content {
+    width: 100%;
+    text-align: center;
+    
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
+
+.s-card{
+	
+      width: 500px; /* Reduced size */
+      height: 500px; /* Same width and height for circle */
+      text-align: center;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+}
+.s-img{
+       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+}
+
+
+
+.social-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact {
+    background-image: url("C:\\Users\\LUKESH SABLE\\Documents\\bootstrap\\bootstrapweb-1\\img\\map-image.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #212529; 
+    padding: 50px 0;
+    width: 100vw;
+    overflow-x: hidden; 
+}
+.btn-send:hover {
+    background-color: #e0a700;
+}

@@ -1,0 +1,183 @@
+
+.mainnav {
+    --bs-bg-opacity: 1;
+    background-color: #212529;
+}
+.mainnav a{
+    color: white;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+.bg-image{
+    background-repeat: no-repeat;
+}
+
+.bg-image .btn {
+    background-color: #FEC107;
+    color: white;
+    font-weight: bold; 
+}
+
+.bg-image h4, .bg-image h1 {
+    color: white; 
+    margin: 0; 
+}
+.bg-image h4{
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+}
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding: 0;
+  margin: 50px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #c0bfbe;
+  z-index: 1;
+}
+
+/* Timeline item styles */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.timeline-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: white;
+  border: 2px solid #dad9d9;
+}
+
+.timeline-item .content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 40%;
+}
+
+/* Alternate left and right alignment */
+.timeline-item:nth-child(odd) .content {
+  order: 1;
+  text-align: left;
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .content {
+  order: 1;
+  text-align: left;
+  margin-left: auto;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    display: none; 
+  }
+  
+
+  .timeline-item {
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item img {
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+  }
+
+  .timeline-item .content {
+    width: 100%;
+    text-align: center;
+    
+  }
+}
+
+
+
+ 
+.contact-form {
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.contact {
+    background-image: url("Image/map-image.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #212529; 
+    padding: 50px 0;
+    width: 100vw;
+    overflow-x: hidden; 
+}
+
+
+body {
+    overflow-x: hidden; 
+}
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ffb600;
+}
+
+.btn-send {
+    background-color: #ffb600;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.btn-send:hover {
+    background-color: #e0a700;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .btn-send {
+        padding: 10px;
+    }
+}

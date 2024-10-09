@@ -1,0 +1,56 @@
+.navbar-nav a{
+    color: antiquewhite;
+}
+.project-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-image,
+.sub-image {
+    width: 100%;
+    object-fit: cover;
+}
+/* Ensure small images together match the large image in width */
+.main-image {
+    height: 500px; /* Fixed height for the large image */
+}
+.sub-image {
+    height: 250px; /* Each smaller image takes half the height of the large image */
+}
+.project-description {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .project-title h2 {
+        font-size: 1.5rem;
+    }
+    .project-title p {
+        font-size: 1rem;
+    }
+    .project-description p {
+        font-size: 1rem;
+    }
+    .footer {
+        font-size: 0.875rem;
+    }
+    /* Stack images on mobile view */
+    .sub-image {
+        height: 200px; /* Smaller height for mobile */
+    }
+    .main-image {
+        height: auto; /* Auto height for responsive behavior */
+    }
+}
